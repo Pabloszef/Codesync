@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import {ThemeProvider} from "@/components/providers/ThemeProvider";
 import {RedirectToSignIn, SignedIn, SignedOut} from "@clerk/nextjs";
 import Footer from "@/components/Footer";
+import {Toaster} from "react-hot-toast";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -42,7 +43,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
                         <main className="px-4 sm:px-6 lg:px-8">
                             {children}
                         </main>
-                        <Footer />
+                        <Footer/>
                     </div>
                 </SignedIn>
 
@@ -50,6 +51,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
                     <RedirectToSignIn/>
                 </SignedOut>
             </ThemeProvider>
+            <Toaster/>
             </body>
             </html>
         </ConvexClerkProvider>
