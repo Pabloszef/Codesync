@@ -12,6 +12,7 @@ import {Loader, LayoutListIcon, Users} from "lucide-react";
 import {ResizableHandle, ResizablePanel, ResizablePanelGroup} from "@/components/ui/resizable";
 import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 import {Button} from "@/components/ui/button";
+import EndCallButton from "@/components/EndCallButton";
 
 
 function MeetingRoom() {
@@ -79,7 +80,7 @@ function MeetingRoom() {
                                         <Users className="size-4"/>
                                     </Button>
 
-                                    <button>end call btn</button>
+                                    <EndCallButton />
                                 </div>
                             </div>
                         </div>
