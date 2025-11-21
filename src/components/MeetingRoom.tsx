@@ -13,6 +13,7 @@ import {ResizableHandle, ResizablePanel, ResizablePanelGroup} from "@/components
 import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 import {Button} from "@/components/ui/button";
 import EndCallButton from "@/components/EndCallButton";
+import CodeEditor from "@/components/CodeEditor";
 
 
 function MeetingRoom() {
@@ -90,7 +91,7 @@ function MeetingRoom() {
                 <ResizableHandle withHandle/>
 
                 <ResizablePanel defaultSize={65} minSize={25}>
-                    <h1>code editor will go here</h1>
+                    <CodeEditor />
                 </ResizablePanel>
             </ResizablePanelGroup>
         </div>
