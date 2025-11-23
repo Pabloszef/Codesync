@@ -14,6 +14,7 @@ import {Card, CardContent, CardFooter, CardHeader, CardTitle} from "@/components
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import {CalendarIcon, CheckCircle2, Clock, XCircleIcon} from "lucide-react";
 import {format} from "date-fns";
+import CommentDialog from "@/components/CommentDialog";
 
 type Interview = Doc<"interviews">;
 
@@ -112,6 +113,7 @@ function DashboardPage() {
                                                         </Button>
                                                     </div>
                                                 )}
+                                                <CommentDialog interviewId={interview._id}/>
                                             </CardFooter>
                                         </Card>
                                     )
